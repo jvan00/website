@@ -49,7 +49,7 @@ def main(page: ft.Page):
 
     page.add(t)
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>

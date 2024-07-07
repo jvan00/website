@@ -173,7 +173,7 @@ def main(page: ft.Page):
       ft.Text("This is Open Sans font example", font_family="Open Sans")
     )
 
-ft.app(target=main, assets_dir="assets")
+ft.app(main, assets_dir="assets")
 ```
 
 :::note
@@ -289,7 +289,7 @@ def main(page):
     print("Default platform:", page.platform)
 
 
-ft.app(target=main)
+ft.app(main)
 ```
 
 ### `platform_brightness`
@@ -568,7 +568,7 @@ def main(page: ft.Page):
     page.window.top = 200
     page.add(ft.ElevatedButton("I'm a floating button!"))
 
-ft.app(target=main)
+ft.app(main)
 ```
 
 **Deprecated in v0.23.0 and will be removed in v0.26.0. Use [`Page.window.bgcolor`](#window) instead.**
@@ -737,7 +737,7 @@ def main(page: ft.Page):
     page.window.visible = True
     page.update()  
 
-ft.app(target=main, view=ft.AppView.FLET_APP_HIDDEN)
+ft.app(main, view=ft.AppView.FLET_APP_HIDDEN)
 ```
 
 Note `view=ft.AppView.FLET_APP_HIDDEN` which hides app window on start.
@@ -846,7 +846,7 @@ upload_url = page.get_upload_url("dir/filename.ext", 60)
 To enable built-in upload storage provide `upload_dir` argument to `flet.app()` call:
 
 ```python
-ft.app(target=main, upload_dir="uploads")
+ft.app(main, upload_dir="uploads")
 ```
 
 ### `go(route)`

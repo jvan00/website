@@ -45,7 +45,7 @@ def main(page: ft.Page):
         ft.ElevatedButton("Stop playing", on_click=lambda _: audio1.pause()),
     )
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>
@@ -116,7 +116,7 @@ def main(page: ft.Page):
         ),
     )
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>

@@ -56,7 +56,7 @@ def main(page: ft.Page):
     page.window.top = 200
     page.add(ft.ElevatedButton("I'm a floating button!"))
 
-ft.app(target=main)
+ft.app(main)
 ```
 
 ### `focused`

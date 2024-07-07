@@ -39,7 +39,7 @@ def main(page: ft.Page):
     )
     page.add(dd, b, t)
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>
@@ -68,7 +68,7 @@ def main(page: ft.Page):
         )
     )
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>
@@ -100,7 +100,7 @@ def main(page: ft.Page):
     )
     page.add(dd, t)
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>
@@ -141,7 +141,7 @@ def main(page: ft.Page):
     delete = ft.OutlinedButton("Delete selected", on_click=delete_clicked)
     page.add(d, ft.Row(controls=[option_textbox, add, delete]))
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>

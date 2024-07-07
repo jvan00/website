@@ -79,7 +79,7 @@ def main(page: ft.Page):
         ),
     )
 
-ft.app(target=main)
+ft.app(main)
 ```
   </TabItem>
 </Tabs>
@@ -350,7 +350,7 @@ def main(page: ft.Page):
         ft.Container(width=100, height=100, bgcolor="red", ink=False, on_hover=on_hover)
     )
 
-ft.app(target=main)
+ft.app(main)
 ```
 
 ### `on_long_press`
@@ -400,5 +400,5 @@ def main(page: ft.Page):
     
     page.add(c)
 
-ft.app(target=main)
+ft.app(main)
 ```
