@@ -45,7 +45,7 @@ def main(page: ft.Page):
         )
     )
 
-ft.app(main)
+ft.app(target=main,)
 ```
 
 To run the app install `flet` module ([create a new Flet environment](/docs/getting-started)):
